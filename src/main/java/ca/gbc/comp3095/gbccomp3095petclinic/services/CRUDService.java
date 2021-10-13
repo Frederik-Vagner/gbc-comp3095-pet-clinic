@@ -6,9 +6,9 @@ import java.util.Set;
 
 public interface CRUDService<T, ID> {
 
-    T findById(ID id);
-    T save(T owner);
-    Set<Owner> findAll();
-    void delete(T object);
-    void deleteById(ID id);
+    T findById(ID ID);
+    T save(T ID);
+    Set<T> findAll();
+    void delete(T ID);
+    void deleteById(ID ID);
 }
